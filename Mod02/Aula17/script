@@ -1,0 +1,22 @@
+let nome = 'Ivon' //Variável
+let nomes = ['Ivon', 'pedro'] //Array
+let personagem = { //Objeto
+    nome:'Ivon',
+    idade:90,
+    pais:'Brasil',
+    olhos:['preto','azul','castanho'], //array
+    caracteristicas:{ //Objeto
+        forca: 20,
+        magia:5,
+        estamina: 15
+    }
+    
+};
+personagem.nome = 'Pedro'; //Para alterar um valor do objeto é só indicar e receber o novo valor.
+
+personagem.caracteristicas.forca += 5; //Adicionar valor em um objeto dentro de outro objeto
+console.log(personagem.nome); 
+console.log(personagem.caracteristicas.forca);
+
+personagem.olhos.push('verde'); // Adicionando valor a um array dentro de um objeto
+console.log(personagem.olhos[3]);
