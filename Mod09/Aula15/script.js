@@ -1,10 +1,6 @@
-let timer
-function rodar(){
-    timer = setTimeout(function(){
-        document.querySelector(".demo").innerHTML= "rodou";
-    },2000);
-     
-}
-function parar(){
-    clearTimeout(timer)
-}
+let nome = "Ivon";
+let idade = 39;
+//let frase = "Meu nome é "+nome+", eu tenho "+idade+" anos e ano que vem farei "+(idade+1)+ " anos."
+let frase = `Meu nome é ${nome}, eu tenho ${idade} anos e ano que vem farei ${idade+1} anos.`
+
+console.log(frase)

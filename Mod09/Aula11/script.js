@@ -1,15 +1,11 @@
 let d = new Date();
-//d.getFullYear();
-//d.getMonth(); De 0 a 11
-//d.getDay();  Dia da semana
-//d.getDate(); Data do mês
-//d.getHours();
-//d.getMinutes();
-//d.getSeconds();
-//d.getMilliseconds();
-//d.getTime(); tempo em ms desde 1/1/1970
-//Date.now(); o mesmo que o anterior em ms
+//d.setFullYear()
+//d.setMonth()
+//d.setDay() Dia da semana de 0 a 6
+//d.setDate() Pode ser o dia ou d.getDate() + (ou - ) dias a mais 
+//d.setHours() Funciona igual ao setDate
 
-let res = Date.now();
+d.setHours(d.getHours()+520);
+let res = d.toString();
 
 console.log(res)

@@ -1,20 +1,15 @@
-let pessoa = {
-    nome: "Ivon",
-    sobrenome: "Ferreira",
-    idade:39,
-    social:{facebook:'ivonferreira',
-            instagram:{
-                url:'@ivonferreira',
-                seguidores:1000}}
- 
-};
-function pegarNomeCompleto ({nome, sobrenome, social:{instagram:{url:instagram}}}) {
-        return `${nome} ${sobrenome}. Siga em ${instagram}`
+let info = ['Ivon Ferreira','Ivon','Ferreira','@ivonferreira'];
+
+let [nomeCompleto, , , instagram ] = info;
+console.log(nomeCompleto,instagram)
+
+let [nome2,sobrenome2,idade2=39] = ['ivon','ferreira']
+console.log(nome2,sobrenome2,idade2)
+
+function criar(){
+    return [1,2,3];
 }
 
-//let {nome,sobrenome,idade} = pessoa;
-//let {nome:pessoaNome,sobrenome:pessoaSobrenome,idade:pessoaIdade} = pessoa;
-//let {facebook,instagram} = pessoa.social
-//let {nome, idade, social:{facebook,instagram}} = pessoa
-//console.log(facebook, instagram.url, instagram.seguidores)
-console.log(pegarNomeCompleto(pessoa))
+let [a,b,c] = criar();
+
+console.log(a,b,c)

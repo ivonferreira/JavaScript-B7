@@ -1,7 +1,15 @@
-let d = new Date(1678196484115);
-//new Date(2000,0,1,12,0,0)
-//new Date("2000-01-01 12:00:00")
-//d.toDateString();
-//d.toUTCString();
-//d.toString();
-console.log(d.toUTCString())
+let d = new Date();
+//d.getFullYear();
+//d.getMonth(); De 0 a 11
+//d.getDay();  Dia da semana
+//d.getDate(); Data do mês
+//d.getHours();
+//d.getMinutes();
+//d.getSeconds();
+//d.getMilliseconds();
+//d.getTime(); tempo em ms desde 1/1/1970
+//Date.now(); o mesmo que o anterior em ms
+
+let res = Date.now();
+
+console.log(res)

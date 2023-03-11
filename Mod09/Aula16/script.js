@@ -1,6 +1,15 @@
-let nome = "Ivon";
-let idade = 39;
-//let frase = "Meu nome é "+nome+", eu tenho "+idade+" anos e ano que vem farei "+(idade+1)+ " anos."
-let frase = `Meu nome é ${nome}, eu tenho ${idade} anos e ano que vem farei ${idade+1} anos.`
+let pessoa = {
+    nome: "Ivon",
+    sobrenome: "Ferreira",
+    idade:39,
+    social:{facebook:'ivonferreira',
+            instagram:'ivon.ferreira'},
+    nomeCompleto: function () {
+            return `${this.nome} ${this.sobrenome}`
+    }
+};
 
-console.log(frase)
+//let {nome,sobrenome,idade} = pessoa;
+let {nome:pessoaNome,sobrenome:pessoaSobrenome,idade:pessoaIdade} = pessoa;
+
+console.log(pessoaNome, pessoaSobrenome, pessoaIdade)
